@@ -23,6 +23,7 @@ with form('form', clear_on_submit=True):
     submitted = form_submit_button('Send')
 
 if submitted and user_input:
+    # 추후 수정 시 output 부분에 user_input에 대한 결과값이 들어가면 됩니다.
     output = query({
         "inputs": {
             "past_user_inputs": session_state.past,
